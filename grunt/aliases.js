@@ -7,8 +7,5 @@ module.exports = {
   'serve': [
     'dev',
     'concurrent'
-  ],
-  'build': [
-    'copy'
   ]
 }
