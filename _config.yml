@@ -7,3 +7,6 @@ exclude:
  - app.yaml
  - grunt
  - node_modules
+ - Gruntfile.js
+ - package.json
+ - scss
