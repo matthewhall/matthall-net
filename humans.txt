@@ -1,0 +1,10 @@
+/* TEAM */
+  Code: Matt Hall
+  Twitter: @bizear
+  From: London, England
+
+/* SITE */
+  Language: English
+  Standards: HTML5, CSS3
+  Components: Google App Engine, Jekyll
+  IDE: Sublime Text 2
