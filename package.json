@@ -1,0 +1,13 @@
+{
+  "name": "matthall.net",
+  "version": "0.0.1",
+  "devDependencies": {
+    "grunt": "^0.4.5",
+    "load-grunt-config": "^0.16.0",
+    "grunt-contrib-sass": "^0.8.1",
+    "grunt-concurrent": "^1.0.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-autoprefixer": "^2.0.0",
+    "grunt-exec": "^0.4.6"
+  }
+}
