@@ -10,3 +10,4 @@ exclude:
  - Gruntfile.js
  - package.json
  - scss
+ - README.md
