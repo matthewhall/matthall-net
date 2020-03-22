@@ -63,7 +63,7 @@
   </head>
   <body>
     <main>
-      <h1 class="greeting">Hello!</h1>
+      <h1>Hello!</h1>
       <h2>My name is Matt Hall.</h2>
       <p>I'm a front end engineer working on digital products at <a href="https://p.ota.to/" rel="noopener">Potato</a>, splitting my time between Bristol, London and San Francisco. Mostly Bristol though.</p>
       <p>You can find me on <a href="https://www.linkedin.com/in/matt-hall-34785039/" rel="me noopener">LinkedIn</a> and also on <a href="https://github.com/matthewhall/" rel="me noopener">GitHub</a>.</p>
@@ -74,7 +74,7 @@
           const ems = { wd: '🤔', we: '😷', n: '😴' };
           const t = d.getDay();
           const h = d.getHours();
-          const el = doc.querySelector('.greeting');
+          const el = doc.querySelector('h1');
           let em = t === 0 || t === 6 ? ems.we : ems.wd;
           if (h > 20 || h < 7) {
             em = ems.n;
