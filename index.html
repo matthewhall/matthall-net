@@ -9,13 +9,23 @@
     <link href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;700&display=swap" rel="stylesheet">
     <style>
       :root {
-        --text-color-base: #333;
         --bg-color-base: #fff;
         --link-color-base: rgb(255, 197, 82);
+        --text-color-base: #333;
+        --text-shadow-base: none;
+      }
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg-color-base: #171738;
+          --link-color-base: #7180B9;
+          --text-color-base: #fff;
+          --text-shadow-base: 1px 1px 1px #000;
+        }
       }
       html {
         color: var(--text-color-base);
         font-family: 'Baloo Chettan 2', Helvetica, Arial, sans-serif;
+        text-shadow: var(--text-shadow-base);
       }
       body {
         background-color: var(--bg-color-base);
