@@ -69,17 +69,19 @@
       <p>You can find me on <a href="https://www.linkedin.com/in/matt-hall-34785039/" rel="me noopener">LinkedIn</a> and also on <a href="https://github.com/matthewhall/" rel="me noopener">GitHub</a>.</p>
     </main>
     <script>
-      (function(doc, d) {
-        const ems = { wd: '🤔', we: '😷', n: '😴' };
-        const t = d.getDay();
-        const h = d.getHours();
-        const el = doc.querySelector('.greeting');
-        let em = t === 0 || t === 6 ? ems.we : ems.wd;
-        if (h > 20 || h < 7) {
-          em = ems.n;
-        }
-        el.innerHTML += ` ${em}`;
-      })(document, new Date());
+      ((doc, win, d) => {
+        win.addEventListener('DOMContentLoaded', () => {
+          const ems = { wd: '🤔', we: '😷', n: '😴' };
+          const t = d.getDay();
+          const h = d.getHours();
+          const el = doc.querySelector('.greeting');
+          let em = t === 0 || t === 6 ? ems.we : ems.wd;
+          if (h > 20 || h < 7) {
+            em = ems.n;
+          }
+          el.innerHTML += ` ${em}`;
+        });
+      })(document, window, new Date());
     </script>
     <script>
       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
